@@ -1,0 +1,199 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "RedSky Database";
+}
+<style>
+    body {
+        background-color: #303658;
+        color: #303658;
+    }
+    #menu{
+        background-color: ghostwhite;
+        width: 100%;
+        height: 100px;
+    }
+    #menu table {
+        font-size: 20px;
+        color: #303658;
+        width: 100%;
+        line-height: 100px;
+        /*inline-size: 100px;*/
+    }
+
+    #menu td {
+        width: 25%;
+        font-weight: 400;
+    }
+    #About{
+        width:100%;
+        height: 1100px;
+        background-color: white;
+    }
+    #About h1{
+        font-size: 80px;
+        color: #303658;
+    }
+    #About p {
+        float: left;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 20px;
+    }
+    #Use {
+        width: 100%;
+        height: 1300px;
+        background-color: ghostwhite;
+    }
+    #Use h1 {
+            font-size: 80px;
+            color: #303658;
+    }
+    #Use p {
+        float: left;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 20px;
+    }
+    #Use table {
+        font-size: 20px;
+        color: #303658;
+        width: 100%;
+    }
+    #Use td {
+        width: 50%;
+        font-weight: 400;
+    }
+    #Version {
+        width: 100%;
+        height: 400px;
+        background-color: white;
+    }
+
+        #Version h1 {
+            font-size: 80px;
+            color: #303658;
+        }
+
+        #Version p {
+            padding-left: 20px;
+            padding-right: 20px;
+            font-size: 20px;
+        }
+
+        #Version table {
+            font-size: 20px;
+            color: #303658;
+            width: 100%;
+        }
+
+        #Version td {
+            width: 50%;
+            font-weight: 400;
+        }
+    a:active {
+        color: #303658;
+    }
+    a:hover {
+        color: #303658;
+    }
+    a:visited {
+        color: #303658;
+    }
+    a:link {
+        color: #303658;
+    }
+</style>
+<section id="menu">
+    <div class="text-center">
+        <table style="width:100%;">
+            <tr>
+                <td><a href="#1">About</a></td>
+                <td><a href="#Use">How-To-Use</a></td>
+                <td><a href="#Version">Version-History</a></td>
+                <td><a href="https://www.github.com/simpleappsin/">GitHub</a></td>
+            </tr>
+        </table>
+    </div>
+</section>
+<section id="About">
+    <div class="text-center">
+        <h1 class="display-4">RedSky Database</h1>
+        <hr style="width: 50%;">
+        <img src="RedSky.png" id="1" alt="" style="width:100%;">
+        <br>
+        <br>
+        <div class="text-left" style="margin-top: 25px;">
+            <p class="display-4">
+                RedSky Database is an software where you can Create Databases, Delete Databases, create Tables, Delete Tables, BackUp Databases and Alter your Tables
+                easily in only one software without using, typing or knowing any type of SQL code. In the software I tried to keep
+                everything simple for anyone to use the software wheter they know how to use such a software or don't know.
+                The software will be updated constantly. I will bring new features such as injection for you to test your database
+                for safety of your data. The software will remain to be stay free and all the features will be added also for free.
+            </p>
+            <p class="display-4">
+                The RedSky Database software is built with C# programming language and using MySQL Package for you to connect to your database.
+                C# programming language gives the software power and quickness for you to use.
+            </p>
+            <br>
+            <br>
+        </div>
+    </div>
+</section>
+
+<section id="Use">
+    <div class="text-center">
+        <br>
+        <br>
+        <h2 class="display-4" style="padding-left: 20px; padding-right: 20px; font-size:38px;">How To Use <br>RedSky Database</h2>
+        <hr style="width: 50%;">
+        <img src="~/RedSkyLogIn.png" id="1" alt="" style="width:100%;">
+        <div class="text-left" style="margin-top: 25px;">
+            <p class="display-4">
+                When you run the software you have to Log In your informations to connect to your database each time. The reason you have to Log In each time
+                is that I don't want you guys to be worried about your privacy or your customer's privacy. Once you get into the software menu leave the rest to the RedSky Database software.
+                Only thing you needd to do is just give no code instructions to the software such as naming the Database/Table/BackUp file etc.
+                The software will do the rest for you and will notify you that the task is completed or if there was any error messages.
+                Just enjoy your life. The RedSky Database is here to make your life easier.
+            </p>
+            <p class="display-4">
+                Your feedbacks are very important to me because future of my softwares are depending on my users experiences. If there is any bug or any type of thing that
+                creates problem to you please give me feedback and I will take care of it in the next upcomming version update.
+                Please suuport me and my projects.
+                <br>
+                <br>
+            </p>
+        </div>
+        <table style="width:100%;">
+            <tr>
+                <td><a href="https://www.buymeacoffee.com/simpleapps" ">Buy Me a Coffee</a></td>
+                <td><a href="https://www.youtube.com/channel/UCnI2fV_2-pvYrwjI7KFW0pA">YouTube</a></td>
+            </tr>
+        </table>
+        
+</section>
+<section id="Version">
+    <div class="text-center">
+        <br>
+        <br>
+        <h2 class="display-4" style="padding-left: 20px; padding-right: 20px; font-size:38px;">Version History <br>RedSky Database</h2>
+        <hr style="width: 50%;">
+        <div class="text-center">
+            @*<table style="width:100%;">
+                <tr>
+                    <td>
+                        <img src="~/server.svg" id="1" alt="" style="width:100%;">
+                    </td>
+                    <td>
+                        <p>
+                            Your feedbacks are very important to me because future of my softwares are depending on my users experiences. If there is any bug or any type of thing that
+                            creates problem to you please give me feedback and I will take care of it in the next upcomming version update.
+                            Please suuport me and my projects.
+                        </p>
+                    </td>
+                </tr>
+            </table>*@
+            <p style="text-align: center;"><a href="~/RedSkyDatabase.zip" download>Download Version: 1.0</a></p>
+        </div>
+    </div>
+</section>
